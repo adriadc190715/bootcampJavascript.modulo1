@@ -9,6 +9,15 @@
 
 * { box-sizing: border-box;}
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--primary);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -46,13 +55,13 @@
 }
 
 
+
   
-  hr {
+hr {
     margin: 8px;
-  }
-  .grid-container {
+}
+.grid-container {
     
-  
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
@@ -60,16 +69,17 @@
     margin-left: 56px;
     margin-right: 32px;
    
+   
       
       }
   
-      .grid-item {
+.grid-item {
         position: relative;
         text-align: center;
       
       }
       
-      .item-details {
+.item-details {
         position: relative;
         bottom: 0;
         left: 0;
@@ -83,19 +93,18 @@
         justify-content: center;
       }
       
-      .item-name {
+.item-name {
         font-size: 16px;
         margin-bottom: 5px;
         font-family: Montserrat;
       }
       
-      .item-price {
+.item-price {
         font-size: 16px;
         font-weight: bold;
         font-family: Montserrat; 
       }
-      
-      .item-flex-container {
+.item-flex-container {
         display: flex;
         flex-grow: 1;
         justify-content: space-between;
@@ -103,10 +112,14 @@
         }
       
   
-  img {
+img {
       border-radius: 20px;
       width: 100%;
       }
+
+img:hover{
+  opacity: 0.8;
+}
 
 
 h1{
@@ -114,6 +127,7 @@ h1{
   font-family: Montserrat;
   font-style: bold;
   margin-left: 32px;
+  margin-top: 96px;
 }
 p{
   font-size: 14px;
@@ -156,15 +170,11 @@ width: 40px;
 height: 40px;
 margin-right: 2px;
 }
-
-
-
-
 @media screen and (max-width: 920px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 0,5fr;
-    margin-right: 0,5fr;
+    margin-left: 0.5fr;
+    margin-right: 0.5fr;
   }
   .container {
     justify-content: center;
@@ -192,6 +202,21 @@ margin-right: 2px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
+    position: relative;
+    
+    
+  }
+  
+  .boxfoot1::before,
+  .boxfoot2::before,
+  .boxfoot3::before,
+  .boxfoot4::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100vh;
+    height: 1px;
+    background-color: white;
   }
   
   .boxfoot1 img,
@@ -200,8 +225,18 @@ margin-right: 2px;
     width: 50px;
     height: 50px;
     margin-right: 8px;
+    margin-bottom: 8px;
   }
+}
+
+  
+
+
+
+
+
+
+
   
   
-  }
   
