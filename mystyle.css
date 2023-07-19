@@ -49,9 +49,7 @@ main {
   margin: 0 auto;
 }
 
-.item-price {
-  font-weight: bold;
-}
+
 
 .item-flex-container {
   display: flex;
