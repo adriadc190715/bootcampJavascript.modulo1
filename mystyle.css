@@ -38,6 +38,7 @@ main {
 
 .box3 img {
   margin-right: 16px;
+  
 }
 
 .grid-container {
@@ -57,17 +58,18 @@ main {
   justify-content: space-between;
 }
 
-img {
-  border-radius: 8px;
-}
-
-img:hover {
-  cursor: zoom-in;
-}
-
 .grid-item {
   margin: 24px;
 }
+
+.grid-item img {
+  border-radius: 8px;
+}
+
+.grid-item img:hover {
+  cursor: zoom-in;
+}
+
 
 h1 {
   font-size: 32px;
@@ -95,6 +97,9 @@ p {
 
 .boxfoot img {
   margin-right: 8px;
+  background-color: var(--primary);
+  border-radius: 24px;
+  padding: 8px;
 }
 
 @media screen and (max-width: 920px) {
